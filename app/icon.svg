@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="trail" x1="2" y1="30" x2="20" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#8b5cf6" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="star" x1="14" y1="4" x2="30" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="#05070e"/>
+  <!-- tapered trail -->
+  <path d="M3 29 L18.2 11.2 L21 14 Z" fill="url(#trail)"/>
+  <path d="M7 30 L19 16.5 L20.2 17.7 Z" fill="url(#trail)" opacity="0.5"/>
+  <!-- star -->
+  <polygon points="22,4 24.35,8.76 29.6,9.52 25.8,13.24 26.7,18.48 22,16 17.3,18.48 18.2,13.24 14.4,9.52 19.65,8.76" fill="url(#star)"/>
+</svg>
