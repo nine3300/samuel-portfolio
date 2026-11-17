@@ -220,3 +220,49 @@ html {
     transform: none !important;
   }
 }
+
+/* ------------------------------------------------------------------
+   Light ("Dawn") mode
+   The markup is written for the dark theme (white text, dark glass
+   cards, pale accents). When the toggle removes .dark from <html>,
+   remap those palette tokens so everything stays readable on the
+   light background.
+   ------------------------------------------------------------------ */
+html:not(.dark) {
+  /* surfaces: dark glass -> light glass */
+  --color-space-950: #faf7fc;
+  --color-space-900: #ffffff;
+  --color-space-850: #f4eef9;
+  --color-space-800: #ece1f4;
+  --color-space-700: #ded0eb;
+
+  /* text: white/slate -> dawn ink (also turns white/10 tints and borders into soft dark ones) */
+  --color-white: #191228;
+  --color-slate-100: #231d38;
+  --color-slate-200: #2f2847;
+  --color-slate-300: #463e5e;
+
+  /* accents: pale shades -> deeper shades with contrast on light backgrounds */
+  --color-cyan-200: #155e75;
+  --color-cyan-300: #0e7490;
+  --color-cyan-400: #0891b2;
+  --color-violet-200: #5b21b6;
+  --color-violet-300: #6d28d9;
+  --color-violet-400: #7c3aed;
+  --color-blue-200: #1e40af;
+  --color-blue-300: #1d4ed8;
+  --color-blue-400: #2563eb;
+  --color-indigo-200: #3730a3;
+  --color-indigo-300: #4338ca;
+  --color-indigo-400: #4f46e5;
+  --color-amber-200: #92400e;
+  --color-amber-300: #b45309;
+  --color-amber-400: #d97706;
+  --color-emerald-200: #065f46;
+  --color-emerald-400: #059669;
+}
+
+/* gradient call-to-action buttons keep their white text */
+html:not(.dark) [class*="from-cyan-500"] {
+  --color-white: #ffffff;
+}
