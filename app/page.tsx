@@ -262,15 +262,11 @@ export default function Home() {
 <svg className="w-4 h-4 text-slate-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
 <span>View Code</span>
 </a>
-<a className="inline-flex items-center gap-1.5 text-slate-200 hover:text-cyan-300 font-display font-semibold text-sm transition-colors group/arrow" href="#contact">
-<span>Read Case Study</span>
-<span className="text-xs text-cyan-400 group-hover/arrow:translate-x-1 transition-transform">→</span>
-</a>
 </div>
 </div>
 </div>
 </article>
-{/* Case Study 2: AstraCore (Preserving https://lh3.googleusercontent.com/aida/ALJJyrCbGPUvf_41FqCV9NwibMEGLC_m91mIJD3cFBpLhEnjOq2cFwQfyIAl8Z5VyBSLMKyQJMa1GzpaOe7kkzPmiPgUb8SqTY0-BJdgQ2k1lstcfCu1P4oEnKxWEzs_W18awtQY6Is3OdOQR5nRVMAjG6x60NdMC5GF4KEWI1sMUrjxM6j5o93fpBai6eysdZtvHkL0VjuxalP2JKyqOiruUHCdDOIrfuJeFXUUdXcPgQI) */}
+{/* Case Study 2: GlucoAI */}
 <article className="spotlight-card tilt-card group relative rounded-3xl bg-space-900/70 dark:bg-space-900/70 border border-white/10 dark:border-white/10 overflow-hidden hover:border-violet-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-violet-500/20">
 <div className="card-glare"></div>
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-8 sm:p-12 relative z-10">
@@ -278,31 +274,31 @@ export default function Home() {
 <div className="lg:col-span-5 order-1 space-y-6">
 {/* Role Tags Badges */}
 <div className="flex flex-wrap gap-2">
-<span className="px-3 py-1 rounded-full text-xs font-mono tracking-wider font-bold bg-violet-500/20 text-violet-200 border border-violet-400/50 hover:scale-105 transition-transform">Full-Stack Arch</span>
-<span className="px-3 py-1 rounded-full text-xs font-mono tracking-wider font-bold bg-cyan-500/20 text-cyan-200 border border-cyan-400/50 hover:scale-105 transition-transform">UI/UX Design</span>
-<span className="px-3 py-1 rounded-full text-xs font-mono tracking-wider font-bold bg-emerald-500/20 text-emerald-200 border border-emerald-400/50 hover:scale-105 transition-transform">Distributed DB</span>
+<span className="px-3 py-1 rounded-full text-xs font-mono tracking-wider font-bold bg-violet-500/20 text-violet-200 border border-violet-400/50 hover:scale-105 transition-transform">RAG / AI</span>
+<span className="px-3 py-1 rounded-full text-xs font-mono tracking-wider font-bold bg-cyan-500/20 text-cyan-200 border border-cyan-400/50 hover:scale-105 transition-transform">Frontend</span>
+<span className="px-3 py-1 rounded-full text-xs font-mono tracking-wider font-bold bg-emerald-500/20 text-emerald-200 border border-emerald-400/50 hover:scale-105 transition-transform">Firebase</span>
 </div>
 <h3 className="font-display font-bold text-2xl sm:text-4xl text-white dark:text-white group-hover:text-violet-300 transition-colors">
-                AstraCore — Distributed Cloud Telemetry
+                GlucoAI — AI Diabetes Q&amp;A Assistant
               </h3>
 <p className="text-slate-100 dark:text-slate-100 text-sm sm:text-base leading-relaxed font-normal">
-                An ultra-dense serverless metrics suite built for high-throughput engineering teams. Combines instant query execution with intuitive neo-brutalist telemetry panels and live anomaly cluster notifications.
+                A Retrieval-Augmented Generation (RAG) app built during the Hytel Bootcamp, which earned a certificate of achievement. It answers diabetes questions in plain language by retrieving clinical guidelines and medical literature, then generating answers that cite their sources, with clear safety messaging that it is for information only, not medical advice.
               </p>
 {/* Tech Stack Badges with Interactive Chips */}
 <div className="pt-2">
 <div className="font-mono text-xs text-violet-300 font-semibold uppercase tracking-wider mb-3">Core Stack Deployment</div>
 <div className="flex flex-wrap gap-2">
-<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">Python / FastAPI</span>
 <span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">React</span>
-<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">MySQL &amp; Redis</span>
+<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">Vite</span>
+<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">Tailwind CSS</span>
 <span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">Firebase</span>
-<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">WebSockets</span>
-<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">Figma</span>
+<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">Firestore</span>
+<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-violet-300 hover:border-violet-400">AI / LLM</span>
 </div>
 </div>
 {/* Action Links with High Contrast */}
 <div className="flex flex-wrap items-center gap-6 pt-4 border-t border-white/15">
-<a className="inline-flex items-center gap-2 text-violet-300 hover:text-white font-display font-bold text-sm transition-all group/link hover:translate-x-1" href="#contact">
+<a className="inline-flex items-center gap-2 text-violet-300 hover:text-white font-display font-bold text-sm transition-all group/link hover:translate-x-1" href="https://health-lifeline-53fb3.web.app/" target="_blank" rel="noopener noreferrer">
 <span>Launch Live Demo</span>
 <svg className="w-4 h-4 group-hover/link:translate-x-1.5 group-hover/link:-translate-y-0.5 transition-transform text-violet-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" strokeLinecap="round" strokeLinejoin="round"></path></svg>
 </a>
@@ -310,16 +306,12 @@ export default function Home() {
 <svg className="w-4 h-4 text-slate-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
 <span>View Code</span>
 </a>
-<a className="inline-flex items-center gap-1.5 text-slate-200 hover:text-violet-300 font-display font-semibold text-sm transition-colors group/arrow" href="#contact">
-<span>Read Case Study</span>
-<span className="text-xs text-violet-400 group-hover/arrow:translate-x-1 transition-transform">→</span>
-</a>
 </div>
 </div>
 {/* Visual Mockup Container */}
 <div className="lg:col-span-7 order-2 relative rounded-2xl overflow-hidden bg-space-950 border border-white/10 group-hover:border-violet-500/40 transition-all">
 <div className="aspect-video w-full overflow-hidden">
-<img alt="AstraCore Distributed Cloud Telemetry Case Study" className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/ALJJyrCbGPUvf_41FqCV9NwibMEGLC_m91mIJD3cFBpLhEnjOq2cFwQfyIAl8Z5VyBSLMKyQJMa1GzpaOe7kkzPmiPgUb8SqTY0-BJdgQ2k1lstcfCu1P4oEnKxWEzs_W18awtQY6Is3OdOQR5nRVMAjG6x60NdMC5GF4KEWI1sMUrjxM6j5o93fpBai6eysdZtvHkL0VjuxalP2JKyqOiruUHCdDOIrfuJeFXUUdXcPgQI" />
+<img alt="GlucoAI diabetes Q&amp;A assistant homepage" className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out" src="/projects/glucoai.png" />
 </div>
 <div className="absolute inset-0 bg-gradient-to-t from-space-950/80 via-transparent to-transparent pointer-events-none"></div>
 {/* Floating Live Metric Badge with Sonar Pulse */}
@@ -328,7 +320,7 @@ export default function Home() {
 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
 <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-400"></span>
 </span>
-<span className="font-mono text-xs text-slate-200">72.1 Gb/s Ingestion Bandwidth</span>
+<span className="font-mono text-xs text-slate-200">Certified • Hytel Bootcamp 2026</span>
 </div>
 </div>
 </div>
