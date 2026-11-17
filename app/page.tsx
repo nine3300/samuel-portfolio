@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import EmailPicker from "./email-picker";
 import PortfolioEffects from "./portfolio-effects";
 
 export default function Home() {
@@ -102,9 +103,9 @@ export default function Home() {
 <span className="relative z-10">View My Work</span>
 <svg className="relative z-10 w-4 h-4 group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeLinecap="round" strokeLinejoin="round"></path></svg>
 </a>
-<a className="magnetic-btn w-full sm:w-auto px-8 py-4 rounded-xl font-display font-semibold text-sm tracking-wide text-slate-200 dark:text-slate-200 bg-white/5 dark:bg-white/5 hover:bg-white/10 dark:hover:bg-white/10 border border-white/15 dark:border-white/15 hover:border-cyan-400/60 backdrop-blur-md hover:shadow-[0_0_25px_rgba(6,182,212,0.25)] flex items-center justify-center gap-3 group" href="#contact">
-<svg className="w-4 h-4 text-cyan-400 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-<span>Download CV</span>
+<a className="magnetic-btn w-full sm:w-auto px-8 py-4 rounded-xl font-display font-semibold text-sm tracking-wide text-slate-200 dark:text-slate-200 bg-white/5 dark:bg-white/5 hover:bg-white/10 dark:hover:bg-white/10 border border-white/15 dark:border-white/15 hover:border-cyan-400/60 backdrop-blur-md hover:shadow-[0_0_25px_rgba(6,182,212,0.25)] flex items-center justify-center gap-3 group" href="mailto:chuluchisanga3300@gmail.com?subject=CV%20Request">
+<svg className="w-4 h-4 text-cyan-400 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+<span>Request CV</span>
 </a>
 </div>
 {/* Gentle Celestial Scroll Down Indicator */}
@@ -206,14 +207,14 @@ export default function Home() {
 </div>
 {/* Case Study Cards Stack */}
 <div className="space-y-16 lg:space-y-24">
-{/* Case Study 1: Finvest (Preserving https://lh3.googleusercontent.com/aida/ALJJyrAkFYzwuvA1xIXfjB5Oil9GB45Crk8CNR_Yl_Q4_H2PQDAHjF6CXmhxQYVfRhuKocNZl_ePOH5_UiHC06gcIR8OZ8gCFfdr7mVXlfasN3av364FY3FVsfU2q_uEs2mzKibKr44sKcTH0nKdFlFBYaaESSD2T2URJoHRHinJud23QpBq5jLbafDc45_WUGceXWGMQFppFM5mnvnM60sZFXVmgKPRgKdiQbBJ_btmrKQ) */}
+{/* Case Study 1: Molly's Store */}
 <article className="spotlight-card tilt-card group relative rounded-3xl bg-space-900/70 dark:bg-space-900/70 border border-white/10 dark:border-white/10 overflow-hidden hover:border-cyan-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20">
 <div className="card-glare"></div>
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-8 sm:p-12 relative z-10">
 {/* Visual Mockup Container */}
 <div className="lg:col-span-7 order-2 lg:order-1 relative rounded-2xl overflow-hidden bg-space-950 border border-white/10 group-hover:border-cyan-500/40 transition-all">
 <div className="aspect-video w-full overflow-hidden">
-<img alt="Finvest Fintech Portfolio Platform Case Study" className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/ALJJyrAkFYzwuvA1xIXfjB5Oil9GB45Crk8CNR_Yl_Q4_H2PQDAHjF6CXmhxQYVfRhuKocNZl_ePOH5_UiHC06gcIR8OZ8gCFfdr7mVXlfasN3av364FY3FVsfU2q_uEs2mzKibKr44sKcTH0nKdFlFBYaaESSD2T2URJoHRHinJud23QpBq5jLbafDc45_WUGceXWGMQFppFM5mnvnM60sZFXVmgKPRgKdiQbBJ_btmrKQ" />
+<img alt="Molly's Store e-commerce homepage" className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out" src="/projects/mollystore.png" />
 </div>
 <div className="absolute inset-0 bg-gradient-to-t from-space-950/80 via-transparent to-transparent pointer-events-none"></div>
 {/* Floating Live Metric Badge with Sonar Pulse */}
@@ -222,7 +223,7 @@ export default function Home() {
 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
 </span>
-<span className="font-mono text-xs text-slate-200">99.98% Uptime Architecture</span>
+<span className="font-mono text-xs text-slate-200">Live on Vercel • In Progress</span>
 </div>
 </div>
 {/* Narrative / Content */}
@@ -235,26 +236,25 @@ export default function Home() {
 <span className="px-3 py-1 rounded-full text-xs font-mono tracking-wider font-bold bg-amber-500/20 text-amber-200 border border-amber-400/50 hover:scale-105 transition-transform">Database</span>
 </div>
 <h3 className="font-display font-bold text-2xl sm:text-4xl text-white dark:text-white group-hover:text-cyan-300 transition-colors">
-                Finvest — Autonomous Digital Asset Engine
+                Molly&apos;s Store — Curated Artisan E-Commerce
               </h3>
 <p className="text-slate-100 dark:text-slate-100 text-sm sm:text-base leading-relaxed font-normal">
-                A multi-asset wealth management portal bridging institutional telemetry with consumer simplicity. Engineered a fault-tolerant microservice pipeline handling live price streams with sub-50ms sync and biometric auth.
+                A modern online boutique for handmade home goods, ethical fashion, and ceramics from independent makers. Features Google, Apple and magic-link sign-in, curated collections, and Mo — an on-site shopping assistant that guides visitors around the store.
               </p>
 {/* Tech Stack Badges with Interactive Chips */}
 <div className="pt-2">
 <div className="font-mono text-xs text-cyan-300 font-semibold uppercase tracking-wider mb-3">Core Stack Deployment</div>
 <div className="flex flex-wrap gap-2">
+<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">Next.js</span>
 <span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">React</span>
-<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">TypeScript</span>
-<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">Node.js</span>
-<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">Supabase</span>
 <span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">Tailwind CSS</span>
-<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">Figma</span>
+<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">Supabase</span>
+<span className="interactive-chip px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white/10 border border-white/20 text-slate-100 hover:text-cyan-300 hover:border-cyan-400">Vercel</span>
 </div>
 </div>
 {/* Action Links with High Contrast */}
 <div className="flex flex-wrap items-center gap-6 pt-4 border-t border-white/15">
-<a className="inline-flex items-center gap-2 text-cyan-300 hover:text-white font-display font-bold text-sm transition-all group/link hover:translate-x-1" href="#contact">
+<a className="inline-flex items-center gap-2 text-cyan-300 hover:text-white font-display font-bold text-sm transition-all group/link hover:translate-x-1" href="https://mollystore-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
 <span>Launch Live Demo</span>
 <svg className="w-4 h-4 group-hover/link:translate-x-1.5 group-hover/link:-translate-y-0.5 transition-transform text-cyan-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" strokeLinecap="round" strokeLinejoin="round"></path></svg>
 </a>
@@ -679,15 +679,15 @@ export default function Home() {
           </p>
 {/* Email Initiate Button with Magnetic Physics */}
 <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-<a className="magnetic-btn w-full sm:w-auto px-9 py-4 rounded-xl font-display font-semibold text-base text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 hover:from-cyan-400 hover:to-violet-500 shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/60 active:scale-95 transition-all flex items-center justify-center gap-3 group" href="mailto:samuel.chulu@example.com">
+<a className="magnetic-btn w-full sm:w-auto px-9 py-4 rounded-xl font-display font-semibold text-base text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 hover:from-cyan-400 hover:to-violet-500 shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/60 active:scale-95 transition-all flex items-center justify-center gap-3 group" href="mailto:chuluchisanga3300@gmail.com">
 <svg className="w-5 h-5 text-white group-hover:scale-110 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-<span>Transmit Signal: samuel.chulu@example.com</span>
+<span>Transmit Signal: chuluchisanga3300@gmail.com</span>
 </a>
 </div>
 {/* Social Channels & Transmitters */}
 <div className="pt-8 flex items-center justify-center gap-6">
 {/* GitHub */}
-<a aria-label="Samuel Chulu on GitHub" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:border-cyan-400 hover:bg-white/10 text-slate-300 hover:text-cyan-400 flex items-center justify-center transition-all hover:scale-115 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)]" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<a aria-label="Samuel Chulu on GitHub" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:border-cyan-400 hover:bg-white/10 text-slate-300 hover:text-cyan-400 flex items-center justify-center transition-all hover:scale-115 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)]" href="https://github.com/nine3300" rel="noopener noreferrer" target="_blank">
 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clipRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fillRule="evenodd"></path></svg>
 </a>
 {/* LinkedIn */}
@@ -695,7 +695,7 @@ export default function Home() {
 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
 </a>
 {/* Direct Message / Mail */}
-<a aria-label="Send direct message" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:border-cyan-400 hover:bg-white/10 text-slate-300 hover:text-cyan-400 flex items-center justify-center transition-all hover:scale-115 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)]" href="mailto:samuel.chulu@example.com">
+<a aria-label="Send direct message" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:border-cyan-400 hover:bg-white/10 text-slate-300 hover:text-cyan-400 flex items-center justify-center transition-all hover:scale-115 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)]" href="mailto:chuluchisanga3300@gmail.com">
 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" strokeLinecap="round" strokeLinejoin="round"></path></svg>
 </a>
 </div>
@@ -715,6 +715,7 @@ export default function Home() {
 <span>© <span id="year">2026</span> All Rights Reserved</span>
 </div>
 </footer><PortfolioEffects />
+<EmailPicker />
     </>
   );
 }
